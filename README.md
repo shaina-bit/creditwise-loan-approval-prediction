@@ -1,12 +1,12 @@
 # CreditWise: Loan Approval Prediction using Machine Learning
 
-Overview
+# Overview
 
 CreditWise is a machine learning project that predicts whether a loan application is likely to be approved based on an applicant's financial and demographic information.
 
 The project focuses on understanding the factors influencing loan approval decisions through Exploratory Data Analysis (EDA), feature engineering, and machine learning model comparison.
 
-Problem Statement
+# Problem Statement
 
 Financial institutions must assess the creditworthiness of applicants before approving loans. Manual evaluation can be time-consuming and inconsistent.
 
@@ -16,7 +16,7 @@ Approved
 Not Approved
 using machine learning techniques.
 
-Dataset Features
+# Dataset Features
 
 The dataset contains applicant information such as:
 
@@ -34,7 +34,7 @@ Target Variable:
 
 Loan_Approved
 
-Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 
 Performed extensive data exploration and visualization, including:
 
@@ -56,7 +56,7 @@ Debt-to-Income Ratio influenced approval decisions.
 Applicant income and savings contributed significantly to loan eligibility.
 Certain demographic and employment characteristics impacted approval rates.
 
-Data Preprocessing
+# Data Preprocessing
 
 The following preprocessing steps were performed:
 
@@ -64,7 +64,7 @@ Label Encoding of categorical features
 Feature scaling using StandardScaler
 Train-Test Split (80-20)
 
-Feature Engineering
+# Feature Engineering
 
 To capture non-linear relationships, additional features were created:
 
@@ -73,7 +73,7 @@ Credit_Score_sq
 
 These engineered features helped improve model learning.
 
-Machine Learning Models Used
+# Machine Learning Models Used
 Logistic Regression
 
 A baseline linear classification model for predicting loan approval.
@@ -86,7 +86,7 @@ Gaussian Naive Bayes
 
 A probabilistic classification model based on Bayes' theorem.
 
-Model Evaluation
+# Model Evaluation
 
 Models were evaluated using:
 
@@ -98,14 +98,13 @@ Confusion Matrix
 
 For loan approval prediction, special emphasis was placed on Precision and Recall, as misclassifying loan applications can have significant financial consequences.
 
-Results
+# Results
 
 The performance of all three models was compared:
 
 Logistic Regression
 K-Nearest Neighbors (KNN)
 Gaussian Naive Bayes
-Best Performing Model
 
 Logistic Regression Model (after feature engineering)
 Precision:  0.7846153846153846
@@ -133,7 +132,7 @@ Cpnfusion Matrix:  [[129  10]
 
 Gaussian Naive Bayes achieved the strongest overall performance on the dataset and was selected as the best-performing model.
 
-Technologies Used
+# Technologies Used
 
 Python
 Pandas
@@ -143,7 +142,7 @@ Seaborn
 Scikit-Learn
 Jupyter Notebook
 
-Project Workflow
+# Project Workflow
 
 Data Collection
 Data Cleaning
@@ -155,7 +154,7 @@ Model Comparison
 Performance Evaluation
 Final Model Selection
 
-Future Improvements
+# Future Improvements
 
 Hyperparameter tuning using GridSearchCV
 Cross-validation for robust evaluation
@@ -163,5 +162,5 @@ Ensemble methods such as Random Forest and XGBoost
 Model deployment using Streamlit
 Real-time loan approval prediction dashboard
 
-Author
+# Author
 Shaina Noushad
