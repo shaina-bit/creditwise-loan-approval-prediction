@@ -20,56 +20,56 @@ using machine learning techniques.
 
 The dataset contains applicant information such as:
 
-Gender
-Marital Status
-Education Level
-Employer Category
-Applicant Income
-Savings
-Credit Score
-Debt-to-Income (DTI) Ratio
-Loan Approval Status
+- Gender
+- Marital Status
+- Education Level
+- Employer Category
+- Applicant Income
+- Savings
+- Credit Score
+- Debt-to-Income (DTI) Ratio
+- Loan Approval Status
 
 Target Variable:
 
-Loan_Approved
+- Loan_Approved
 
 # Exploratory Data Analysis (EDA)
 
 Performed extensive data exploration and visualization, including:
 
-Missing value analysis
-Dataset statistics and distributions
-Loan approval class balance analysis
-Gender distribution analysis
-Education level distribution
-Marital status distribution
-Employer category distribution
-Correlation heatmap
-Credit score vs loan approval analysis
-Applicant income vs loan approval analysis
-Outlier detection using box plots
+- Missing value analysis
+- Dataset statistics and distributions
+- Loan approval class balance analysis
+- Gender distribution analysis
+- Education level distribution
+- Marital status distribution
+- Employer category distribution
+- Correlation heatmap
+- Credit score vs loan approval analysis
+- Applicant income vs loan approval analysis
+- Outlier detection using box plots
 
-Key Findings
-Credit Score showed a strong relationship with loan approval.
-Debt-to-Income Ratio influenced approval decisions.
-Applicant income and savings contributed significantly to loan eligibility.
-Certain demographic and employment characteristics impacted approval rates.
+# Key Findings
+- Credit Score showed a strong relationship with loan approval.
+- Debt-to-Income Ratio influenced approval decisions.
+- Applicant income and savings contributed significantly to loan eligibility.
+- Certain demographic and employment characteristics impacted approval rates.
 
 # Data Preprocessing
 
 The following preprocessing steps were performed:
 
-Label Encoding of categorical features
-Feature scaling using StandardScaler
-Train-Test Split (80-20)
+- Label Encoding of categorical features
+- Feature scaling using StandardScaler
+- Train-Test Split (80-20)
 
 # Feature Engineering
 
 To capture non-linear relationships, additional features were created:
 
-DTI_Ratio_sq
-Credit_Score_sq
+- DTI_Ratio_sq
+- Credit_Score_sq
 
 These engineered features helped improve model learning.
 
@@ -90,11 +90,11 @@ A probabilistic classification model based on Bayes' theorem.
 
 Models were evaluated using:
 
-Accuracy Score
-Precision
-Recall
-F1 Score
-Confusion Matrix
+- Accuracy Score
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
 
 For loan approval prediction, special emphasis was placed on Precision and Recall, as misclassifying loan applications can have significant financial consequences.
 
@@ -102,65 +102,65 @@ For loan approval prediction, special emphasis was placed on Precision and Recal
 
 The performance of all three models was compared:
 
-Logistic Regression
-K-Nearest Neighbors (KNN)
-Gaussian Naive Bayes
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Gaussian Naive Bayes
 
 Logistic Regression Model (after feature engineering)
-Precision:  0.7846153846153846
-Accuracy:  0.88
-Recall Score:  0.8360655737704918
-F1 Score:  0.8095238095238095
-Cpnfusion Matrix:  [[125  14]
+- Precision:  0.7846153846153846
+- Accuracy:  0.88
+- Recall Score:  0.8360655737704918
+- F1 Score:  0.8095238095238095
+- Confusion Matrix:  [[125  14]
  [ 10  51]]
 
 KNN Model (after feature engineering)
-Precision:  0.6730769230769231
-Accuracy:  0.785
-Recall Score:  0.5737704918032787
-F1 Score:  0.6194690265486725
-Cpnfusion Matrix:  [[122  17]
+- Precision:  0.6730769230769231
+- Accuracy:  0.785
+- Recall Score:  0.5737704918032787
+- F1 Score:  0.6194690265486725
+- Confusion Matrix:  [[122  17]
  [ 26  35]]
 
 Naive Bayes Model (after feature engineering)
-Precision:  0.8113207547169812
-Accuracy:  0.86
-Recall Score:  0.7049180327868853
-F1 Score:  0.7543859649122807
-Cpnfusion Matrix:  [[129  10]
+- Precision:  0.8113207547169812
+- Accuracy:  0.86
+- Recall Score:  0.7049180327868853
+- F1 Score:  0.7543859649122807
+- Confusion Matrix:  [[129  10]
  [ 18  43]]
 
 Gaussian Naive Bayes achieved the strongest overall performance on the dataset and was selected as the best-performing model.
 
 # Technologies Used
 
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-Learn
-Jupyter Notebook
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Jupyter Notebook
 
 # Project Workflow
 
-Data Collection
-Data Cleaning
-Exploratory Data Analysis
-Feature Engineering
-Data Preprocessing
-Model Training
-Model Comparison
-Performance Evaluation
-Final Model Selection
+- Data Collection
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Data Preprocessing
+- Model Training
+- Model Comparison
+- Performance Evaluation
+- Final Model Selection
 
 # Future Improvements
 
-Hyperparameter tuning using GridSearchCV
-Cross-validation for robust evaluation
-Ensemble methods such as Random Forest and XGBoost
-Model deployment using Streamlit
-Real-time loan approval prediction dashboard
+- Hyperparameter tuning using GridSearchCV
+- Cross-validation for robust evaluation
+- Ensemble methods such as Random Forest and XGBoost
+- Model deployment using Streamlit
+- Real-time loan approval prediction dashboard
 
 # Author
 Shaina Noushad
